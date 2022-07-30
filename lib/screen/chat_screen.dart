@@ -14,7 +14,6 @@ chatscrn({required this.user});
 
 class _chatscrnState extends State<chatscrn> {
   MessageBubble(message msg,bool isMe,bool isliked){
-
     final Container Mge=Container(
       width: MediaQuery.of(context).size.width * 0.75,
       padding: EdgeInsets.symmetric(horizontal: 25.0,vertical: 15.0),
@@ -147,7 +146,7 @@ class _chatscrnState extends State<chatscrn> {
                     itemCount: examplechat .length,
                     itemBuilder: (context,index){
                   final message msg=examplechat[index];
-                  final bool isMe=msg.senderinfo.id == current_user.id;
+                  final bool isMe=msg.senderinfo.id == Current_user.id;
                   return MessageBubble(msg,isMe,msg.isliked);
                 }),
             ),

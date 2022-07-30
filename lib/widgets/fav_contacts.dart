@@ -55,7 +55,7 @@ class favcontact extends StatelessWidget {
                         style: TextStyle(
                           color: Colors.grey,
                           fontWeight: FontWeight.w600,
-                          fontSize: 16.0,
+                          fontSize: 12.0,
                       ),),
                       ],
                     ),

@@ -22,9 +22,9 @@ class _homescreenState extends State<homescreen> {
           icon: Icon(Icons.menu),
           onPressed:(){},
         ),
-        title: Text('Chats',
+        title: Text('MESSENGER',
         style: TextStyle(
-          fontSize: 28.0,
+          fontSize: 25.0,
           fontWeight: FontWeight.bold,
         ),),
         elevation: 0.0,

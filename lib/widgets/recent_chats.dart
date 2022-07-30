@@ -2,11 +2,18 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:messaging_app/models/message_model.dart';
 import 'package:messaging_app/screen/chat_screen.dart';
-class recentchats extends StatelessWidget {
+class recentchats extends StatefulWidget {
   const recentchats({Key? key}) : super(key: key);
 
   @override
+  State<recentchats> createState() => _recentchatsState();
+}
+
+class _recentchatsState extends State<recentchats> {
+  Map data={};
+  @override
   Widget build(BuildContext context) {
+
     return Expanded(
       child: Container(
         decoration: BoxDecoration(
@@ -97,7 +104,7 @@ class recentchats extends StatelessWidget {
                            child: Text('NEW',
                              style: TextStyle(
                                color: Colors.white,
-                               fontSize: 15.0,
+                               fontSize: 10.0,
                                fontWeight: FontWeight.bold,
                              ),),),
                         ],
